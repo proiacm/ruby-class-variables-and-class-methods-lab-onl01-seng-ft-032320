@@ -17,6 +17,7 @@ def self.count
 end
 
 def self.genres 
+unless genres.include?(genre)
 
 end
 
