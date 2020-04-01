@@ -29,7 +29,7 @@ end
 
 def self.genre_count
   @@genres.to_h()
-  @@genres.map do |type|
+  @@genres.each do |type|
     if @@genres.include?(type)
       @@genres[type] += 1
     else
