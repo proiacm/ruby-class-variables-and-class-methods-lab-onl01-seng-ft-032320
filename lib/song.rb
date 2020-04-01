@@ -29,7 +29,7 @@ end
 
 def self.genre_count
   @@genres.each do |type|
-    if @@genres.has_key?(type)
+    if @@genres.include?(type)
       @@genres[type] += 1
     else
       @@genres = []
