@@ -29,8 +29,9 @@ end
 
 def self.genre_count
   @@genres.map do |type|
-    if type == type
-      @@genres[type] +=1
+    #if type == type
+      #@@genres[type] +=1
+      
     else
       @@genres = []
       @@genres << type
