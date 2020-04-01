@@ -28,7 +28,9 @@ def self.artists
 end
 
 def self.genre_count
-  @@genres.map do |type|
+  genre_count_hash = {}
+
+  @@genres.each do |type|
     if 
       @@genres.has_key?(type)
       @@genres[type] += 1
