@@ -28,6 +28,7 @@ def self.artists
 end
 
 def self.genre_count
+  genres = {}
   @@genres.map do |type|
     #if type == type
       @@genres[type] += 1
@@ -38,5 +39,6 @@ def self.genre_count
       #end
      # @@genres.to_h
     end
+    genres
   end
 end
