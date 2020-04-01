@@ -28,10 +28,10 @@ def self.artists
 end
 
 def self.genre_count
-  genres = {}
+  genres_hash = {}
   @@genres.each do |type|
     #if type == type
-      @@genres[type] += 1
+      genres_hash[type] += 1
        
     #else
       #@@genres = []
@@ -39,6 +39,6 @@ def self.genre_count
       #end
      # @@genres.to_h
     end
-    genres
+    genres_hash
   end
 end
