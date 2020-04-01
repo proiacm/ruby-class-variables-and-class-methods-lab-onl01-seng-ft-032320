@@ -28,16 +28,14 @@ def self.artists
 end
 
 def self.genre_count
-  genres_hash = {}
   @@genres.each do |type|
-    if type == type
-      genres_hash[type] += 1
+    if @@genres.has_key?(type)
+      @@genres[type] += 1
     else
-      #@@genres = []
-      #@@genres << type
-      #end
-     # @@genres.to_h
+      @@genres = []
+      @@genres << type
+      end
+     @@genres.to_h
     end
-    genres_hash
   end
 end
