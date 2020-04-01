@@ -29,14 +29,13 @@ end
 
 def self.genre_count
   @@genres.map do |type|
-    if frequencies[type] +=1
-      #@@genres.has_key?(type)
-      #@@genres[type] += 1
+    if 
+      @@genres.has_key?(type)
+      @@genres[type] += 1
     else
       @@genres = []
       @@genres << type
       end
-      @@genres
     end
   end
 end
