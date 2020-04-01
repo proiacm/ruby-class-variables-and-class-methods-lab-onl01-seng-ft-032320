@@ -40,4 +40,10 @@ def self.genre_count
     end
     genre_count_hash
   end
+  
+  def self.artist_count
+    artist_count_hash = {}
+    
+    
+  end
 end
