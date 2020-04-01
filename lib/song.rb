@@ -30,7 +30,7 @@ end
 def self.genre_count
   @@genres.to_h()
   @@genres.each do |type|
-    if 
+    if frequencies[type] +=1
       #@@genres.has_key?(type)
       #@@genres[type] += 1
     else
