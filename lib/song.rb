@@ -30,10 +30,9 @@ end
 def self.genre_count
   genres_hash = {}
   @@genres.each do |type|
-    #if type == type
+    if type == type
       genres_hash[type] += 1
-       
-    #else
+    else
       #@@genres = []
       #@@genres << type
       #end
