@@ -37,7 +37,6 @@ def self.genre_count
       @@genres = []
       @@genres << type
       end
-      @@genres
     end
   end
 end
