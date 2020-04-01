@@ -44,6 +44,6 @@ def self.genre_count
   def self.artist_count
     artist_count_hash = {}
     
-    
+    @@artists.each do |
   end
 end
