@@ -31,8 +31,7 @@ def self.genre_count
   genre_count_hash = {}
 
   @@genres.each do |type|
-    if 
-      genre_count_hash[type]
+    if genre_count_hash[type]
       genre_count_hash[type] += 1
     else
       genre_count_hash[type] = 1
@@ -44,6 +43,13 @@ def self.genre_count
   def self.artist_count
     artist_count_hash = {}
     
-    @@artists.each do |
+    @@artists.each do |name|
+      if artist_count_hash[name]
+        artist_count_hash[name] += 1 
+      else
+        artist_count_hash[name] = 1
+      end
+    end
+    artist_count_hash
   end
 end
