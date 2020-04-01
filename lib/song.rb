@@ -29,7 +29,7 @@ end
 
 def self.genre_count
   genres = {}
-  @@genres.map do |type|
+  @@genres.each do |type|
     #if type == type
       @@genres[type] += 1
        
