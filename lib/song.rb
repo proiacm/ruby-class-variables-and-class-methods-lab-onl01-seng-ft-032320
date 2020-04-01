@@ -32,12 +32,12 @@ def self.genre_count
 
   @@genres.each do |type|
     if 
-      @@genres.has_key?(type)
-      @@genres[type] += 1
+      genre_count_hash[type]
+      genre_count_hash[type] += 1
     else
-      @@genres = []
-      @@genres << type
+      genre_count_hash[type] = 1
       end
     end
+    genre_count_hash
   end
 end
