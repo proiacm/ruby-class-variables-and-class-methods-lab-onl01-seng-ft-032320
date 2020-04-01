@@ -32,11 +32,11 @@ def self.genre_count
     #if type == type
       @@genres[type] += 1
        
-    else
-      @@genres = []
-      @@genres << type
+    #else
+      #@@genres = []
+      #@@genres << type
       end
-      @@genres.to_h
+     # @@genres.to_h
     end
   end
 end
